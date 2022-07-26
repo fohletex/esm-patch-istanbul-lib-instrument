@@ -4,7 +4,8 @@ Patches issue https://github.com/istanbuljs/istanbuljs/issues/614: Having an ESM
 
 ```
 yarn add --dev patch-package
-curl -LO <url_of_file>
+mkdir patches && cd patches
+curl -LO https://raw.githubusercontent.com/fohletex/esm-patch-istanbul-lib-instrument/main/istanbul-lib-instrument+5.2.0.patch
 patch-package
 ```
 
